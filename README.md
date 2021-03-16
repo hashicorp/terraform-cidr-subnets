@@ -53,7 +53,7 @@ to the allocated CIDR prefixes:
 The `new_bits` values are the number of _additional_ address bits to use for
 numbering the new networks. Because network `foo` has a `new_bits` of 8,
 and the base CIDR block has an existing prefix of 8, its final prefix length
-is 8 + 8 = 16. `baz` has a `new_bits` of 8, so its final prefix length is
+is 8 + 8 = 16. `baz` has a `new_bits` of 4, so its final prefix length is
 only 8 + 4 = 12 bits.
 
 If the order of the given networks is significant, the alternative output
