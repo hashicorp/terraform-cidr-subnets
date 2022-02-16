@@ -7,7 +7,7 @@ variable "base_cidr_block" {
 variable "networks" {
   type = list(object({
     name     = string
-    new_bits = number
+    netmask = number
   }))
-  description = "A list of objects describing requested subnetwork prefixes. new_bits is the number of additional network prefix bits to add, in addition to the existing prefix on base_cidr_block."
+  description = "A list of objects describing requested subnetwork prefixes. netmask is the requested subnetwork cidr to slice from base_cidr_block"
 }
