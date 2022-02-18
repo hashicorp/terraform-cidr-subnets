@@ -12,3 +12,7 @@ output "base_cidr_block" {
   value       = var.base_cidr_block
   description = "Echoes back the base_cidr_block input variable value, for convenience if passing the result of this module elsewhere as an object."
 }
+
+output "grouped_by_separator" {
+  value = try({ for _, type in local.name_prefixes: type => { for name, cidr in local.addrs_by_name: split(var.separator, name)[1] => cidr if split(var.separator, name)[0] == type}}, null)
+}
