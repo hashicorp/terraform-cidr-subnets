@@ -11,3 +11,9 @@ variable "networks" {
   }))
   description = "A list of objects describing requested subnetwork prefixes. netmask is the requested subnetwork cidr to slice from base_cidr_block"
 }
+
+variable "seperator" {
+  type = string
+  default = "/"
+  description = "Used to provide an output of grouped subnets based on a split()[0]."
+}
