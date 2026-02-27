@@ -77,7 +77,7 @@ important to take care to avoid implicitly renumbering other networks.
 
 The safest approach is to only add new networks to the end of the list and
 to never remove an existing network or or change its `new_bits` value. If
-an existing allocation becomes obsolute, you can set its name explicitly to
+an existing allocation becomes obsolete, you can set its name explicitly to
 `null` to skip allocating it a prefix but to retain the space it previously
 occupied in the address space:
 
