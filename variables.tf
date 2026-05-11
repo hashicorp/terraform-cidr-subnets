@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2019, 2026
+
 
 variable "base_cidr_block" {
   type        = string
