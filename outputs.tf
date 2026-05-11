@@ -1,3 +1,5 @@
+# Copyright IBM Corp. 2019, 2026
+
 output "network_cidr_blocks" {
   value       = tomap(local.addrs_by_name)
   description = "A map from network names to allocated address prefixes in CIDR notation."
